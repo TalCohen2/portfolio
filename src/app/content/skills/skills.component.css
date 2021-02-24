@@ -1,0 +1,39 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+}
+
+.mainContainer > .imgHolder {
+    width: 25%;
+    height: 20%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mainContainer > .imgHolder > a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer > .imgHolder > a > img {
+    max-width: 80%;
+    max-height: 80%;
+    transition: max-width 0.3s ease-in, max-height 0.3s ease-out;
+}
+
+.mainContainer > .imgHolder > a > img:hover {
+    max-width: 95%;
+    max-height: 95%;
+}

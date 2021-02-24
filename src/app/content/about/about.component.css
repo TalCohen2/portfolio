@@ -1,0 +1,28 @@
+div {
+    width: 80%;
+    background-color: white;
+    /* padding: 50px; */
+    position: relative;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+
+}
+
+div > h1 {
+    /* font-size: 3rem; */
+    text-align: center;
+    /* font-size: clamp(1.5rem,4rem,4rem); */
+    /* font-size: clamp(5px, 5vw, 50px); */
+    /* padding: 20px; */
+}
+
+div > p {
+    /* font-size: 1.5rem; */
+    white-space: pre-line;
+    /* font-size: clamp(1rem,2.5rem,1rem); */
+
+}

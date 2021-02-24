@@ -1,0 +1,165 @@
+nav {
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px;
+}
+
+nav>div>.textHolder {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav>div.textHolder:focus {
+  outline: 0;
+}
+
+nav>div.topContent>img,nav>div.blackLayer {
+  display: none;
+  background-color: transparent;
+}
+
+nav>div.topContent>.textHolder>h1 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+  color:  rgb(44, 172, 150);
+  width: 150px;
+
+}
+
+/* nav>ul { */
+  /* height: 100%; */
+  /* height: calc(100vh - 144px); */
+/* } */
+
+nav>ul>li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+nav>ul>li>a>img {
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px 5px;
+  transition: color 0.5s;
+}
+
+nav>ul>li:hover {
+  background-color: rgb(44, 172, 150);;
+
+}
+
+nav>ul>li:hover>a {
+  color: white;
+}
+
+nav>ul>li.active {
+  background-color: rgb(44, 172, 150);
+}
+
+nav>ul>li.active>a {
+  color: white;
+}
+
+nav > hr {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    width: 100vw;
+    height: 101px;
+  }
+
+  nav>div.topContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav>div.topContent>.textHolder {
+    /* width: calc(100%-0px); */
+    width: 100%;
+  }
+
+  nav>div.topContent>img {
+    /* display: inline-block; */
+    display: inline;
+    /* height: 64px; */
+    align-self: center;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  nav > div.topContent > .textHolder>h1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  nav > ul {
+    position: absolute;
+    transition: left 1s;
+    left: -200px;
+  }
+
+  nav>ul.displayNav {
+    display: inline-block;
+    /* width: 10px; */
+    background-color: white;
+    /* transition: left 1.5s; */
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px;
+    height: calc(100vh - 102px);
+    /* left: 0; */
+    /* height: 100vh; */
+    animation: slideIn 0.5s ease-in forwards;
+  }
+
+  /* nav>ul>.blackLayer { */
+    /* width: calc(100vw - 200px);
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    float: right; */
+  /* } */
+
+  nav>div.blackLayer.displayNav {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* transition: background-color 2s; */
+    position: absolute;
+    height: calc(100vh - 102px);
+    width: 100vw;
+  }
+
+  @keyframes slideIn {
+    0% {left:-200px;}
+    100%{left:0px}
+  }
+
+
+}
+

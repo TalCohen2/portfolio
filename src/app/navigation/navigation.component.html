@@ -1,0 +1,21 @@
+<nav>
+    <div class="topContent">
+        <img src="../../assets/images/icons/burger1.png" alt="burger" (click)="onBurgerClick()">
+        <div class="textHolder" routerLink="/home">
+            <h1>Tal 
+                Cohen</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </div>
+    <hr>
+    <div class="blackLayer" [ngClass]="{'displayNav': displayNav}"></div>
+    <ul [ngClass]="{'displayNav': displayNav}">
+        <li [ngClass]="{'active':child1RL.isActive}"><a routerLink="/about" [routerLinkActive] #child1RL="routerLinkActive"><img src="../../assets/images/icons/person.png" alt="person">About</a></li>
+        <li [ngClass]="{'active':child2RL.isActive}"><a routerLink="/experience" [routerLinkActive] #child2RL="routerLinkActive"><img src="../../assets/images/icons/graph2.png" alt="graph">Experience</a></li>
+        <li [ngClass]="{'active':child3RL.isActive}"><a routerLink="/projects" [routerLinkActive] #child3RL="routerLinkActive"><img src="../../assets/images/icons/folder.png" alt="folder">Projects</a></li>
+        <li [ngClass]="{'active':child4RL.isActive}"><a routerLink="/skills" [routerLinkActive] #child4RL="routerLinkActive"><img src="../../assets/images/icons/graph1.png" alt="graph">Skills</a></li>
+        <li [ngClass]="{'active':child5RL.isActive}"><a routerLink="/education" [routerLinkActive] #child5RL="routerLinkActive"><img src="../../assets/images/icons/hat.png" alt="hat">Education</a></li>
+        <li [ngClass]="{'active':child6RL.isActive}"><a routerLink="/contact" [routerLinkActive] #child6RL="routerLinkActive"><img src="../../assets/images/icons/email.png" alt="mail">Contact</a></li>
+        <li><a><img src="../../assets/images/icons/word.png" alt="word">Resume</a></li>
+    </ul>
+</nav>
