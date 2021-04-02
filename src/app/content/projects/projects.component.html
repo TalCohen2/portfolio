@@ -1,1 +1,22 @@
-<p>projects works!</p>
+<div class="mainContainer">
+    <div *ngFor="let project of projects">
+        <div class="title">
+            <h2>{{project.name}}</h2>
+        </div>
+        <hr>
+        <div class="description">
+            <h3>Description:</h3>
+            <p>{{project.description}}</p>
+        </div>
+        <div class="techStack">
+            <h3>Tools & Technologies:</h3>
+            <p>Front: <span *ngFor="let front of project.techStack.front; let i = index">{{front}}{{i < project.techStack.front.length-1 ? ', ':'.'}}</span></p>
+            <p>Back: <span *ngFor="let back of project.techStack.back; let i = index">{{back}}{{i < project.techStack.back.length-1 ? ', ':'.'}}</span></p>
+            <p>Database: <span>{{project.techStack.Database}}.</span></p>
+        </div>
+        <div class="links">
+            <a *ngIf="project.links.website" class="website" target="_blank" [href]="project.links.website"><img src="../../../assets/images/icons/internet.png" alt="gitHub"></a>
+            <a *ngIf="project.links.github" class="gitHub" target="_blank" [href]="project.links.github"><img src="../../../assets/images/icons/github.png" alt="gitHub"></a>
+        </div>
+    </div>
+</div>

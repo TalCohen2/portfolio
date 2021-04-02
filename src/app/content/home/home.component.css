@@ -1,0 +1,15 @@
+div {
+    margin: 30px;
+    font-size: 2rem;
+}
+
+h1,p {
+    font-size: 3rem;
+    color: white;
+
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: rgb(44, 172, 150);
+}

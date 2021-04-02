@@ -1,9 +1,8 @@
 .contentContainer {
     width: calc(100% - 200px);
-    height: calc(100vh - 142px);
+    height: calc(100vh - 144.4px);
     background-color: rgb(235, 235, 235);
     float: right;
-
 }
 
 .fullHeight {

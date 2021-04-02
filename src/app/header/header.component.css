@@ -1,8 +1,9 @@
 div {
-    height: 142px;
+    height: 144.4px;
     width: calc(100vw - 200px);
     float: right;
     background-color: rgb(44, 172, 150);
+    position: relative;
 }
 div > h1 {
     font-size: 42px;

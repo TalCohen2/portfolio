@@ -1,0 +1,81 @@
+.mainContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items:baseline;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.mainContainer > div {
+    margin: 10px 30px;
+    width: 415px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px #888888;
+    position: relative;
+}
+
+.mainContainer > div > .title > h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+hr {
+    margin: 10px auto;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(44, 172, 150, 0.75), rgba(255, 255, 255, 0));
+} 
+
+.mainContainer > div > .description > p {
+    white-space: pre-line;
+}
+
+.mainContainer > div > .links {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.mainContainer > div > .links > a {
+    margin: 0 4px;
+}
+
+.mainContainer > div > .links > a > img {
+    width: 30px;
+}
+
+.mainContainer > div > .links > .gitHub:hover > img {
+    content: url(../../../assets/images/icons/purpleGithub.png);
+}
+
+.mainContainer > div > .links > .website:hover > img {
+    content: url(../../../assets/images/icons/purpleInternet.png);
+}
+
+.mainContainer > div > .links > a > img {
+    width: 30px;
+}
+
+.mainContainer > div > .techStack {
+    margin-top: 10px;
+}
+
+.mainContainer > div > div > h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mainContainer > div > .techStack > p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
