@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
       techStack: {
         front: ['Angular','rxjs','TypeScript','Bootstrap 3','CSS3','HTML5'],
         back:['NodeJS','JavaScript','Express'],
-        Database:'mongoDB'
+        Database:''
       },
       description:`A Messaging system with a mailbox that includes features such as send messages between users, view and delete sent and received messages.`,
       links: {

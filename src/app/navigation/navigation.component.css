@@ -94,22 +94,21 @@ nav > hr {
   nav {
     width: 100vw;
     height: 101px;
+    z-index: 2;
   }
 
   nav>div.topContent {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   nav>div.topContent>.textHolder {
-    /* width: calc(100%-0px); */
     width: 100%;
   }
 
   nav>div.topContent>img {
-    /* display: inline-block; */
     display: inline;
-    /* height: 64px; */
     align-self: center;
     margin-left: 20px;
     cursor: pointer;
@@ -126,30 +125,23 @@ nav > hr {
     position: absolute;
     transition: left 1s;
     left: -200px;
+    background-color: white;
+    width: 200px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px;
+    height: calc(100vh - 102px);
+
   }
 
   nav>ul.displayNav {
-    display: inline-block;
-    /* width: 10px; */
-    background-color: white;
-    /* transition: left 1.5s; */
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px;
-    height: calc(100vh - 102px);
-    /* left: 0; */
-    /* height: 100vh; */
-    animation: slideIn 0.5s ease-in forwards;
+    /* display: inline-block; */
+    /* background-color: white; */
+    /* width: 200px; */
+    /* box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px; */
+    /* height: calc(100vh - 102px); */
+    transition: left 0.3 ease-in;
+    left: 0px;
   }
-
-  /* nav>ul>.blackLayer { */
-    /* width: calc(100vw - 200px);
-    background-color: black;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: -200px;
-    float: right; */
-  /* } */
 
   nav>div.blackLayer.displayNav {
     display: block;
@@ -159,12 +151,6 @@ nav > hr {
     height: calc(100vh - 102px);
     width: 100vw;
   }
-
-  @keyframes slideIn {
-    0% {left:-200px;}
-    100%{left:0px}
-  }
-
 
 }
 

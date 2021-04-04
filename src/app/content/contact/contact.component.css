@@ -1,0 +1,19 @@
+div {
+    margin: 10px 30px;
+}
+
+div > div {
+    margin: 15px 0;
+}
+
+div > div > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(44, 172, 150);
+}
+
+div > div > a > img {
+    width: 36px;
+    padding-right: 10px;
+}

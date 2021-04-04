@@ -1,1 +1,8 @@
-<p>contact works!</p>
+<div class="mainContainer">
+    <div *ngFor="let contact of contacts">
+        <a [href]="contact.link" target="_blank">
+            <img [src]="'../../../assets/images/icons/' + contact.icon">
+            {{contact.display}}
+        </a>
+    </div>
+</div>

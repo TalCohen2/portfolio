@@ -10,7 +10,6 @@ import { AboutComponent } from './content/about/about.component';
 import { ExperienceComponent } from './content/experience/experience.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { SkillsComponent } from './content/skills/skills.component';
-import { EducationComponent } from './content/education/education.component';
 import { ContactComponent } from './content/contact/contact.component'
 import { UrlService } from './services/url.service';
 
@@ -24,7 +23,6 @@ import { UrlService } from './services/url.service';
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
-    EducationComponent,
     ContactComponent
   ],
   imports: [

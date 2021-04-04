@@ -17,9 +17,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(private router:Router, private urlService:UrlService) { }
 
   ngOnInit(): void {
-    console.log(this.urlService.url)
     this.urlSubscriber = this.urlService.url.subscribe((url)=>{
-      console.log('url from subscriber: ',url);
       this.url = url;
     })
   }

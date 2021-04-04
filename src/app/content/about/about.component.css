@@ -19,7 +19,9 @@
 }
 
 .mainContainer > .contentHolder {
-    width: 650px;
+    max-width: 650px;
+    width: 90%;
+    /* min-width: 300px; */
     color: white;
     position: relative;
     z-index: 1;
@@ -54,33 +56,27 @@
     color: black;
 }
 
-/* .mainContainer > div {
-    width: 85%;
-    min-width: 526px;
-    max-width: 750px;
-    margin: 50px auto;
-    background-color: white;
-    border-radius: 5px; 
-    padding: 20px;
-    box-shadow: 0px 0px 10px 5px #888888;
-}
+@media screen and (max-width: 800px) {
 
-.mainContainer > div > h1 {
-    text-align: center;
-    font-size: 4rem;
-}
+    .mainContainer {
+        background-position-x: 70%;
+    }
 
-.mainContainer > div > p {
-    font-size: 1.5rem;
-    text-align: center;
-    white-space: pre-line;
-    line-height: 2rem;
-}
+    .mainContainer > .contentHolder {
+        left: 5px;
+        height: calc(100% - 5px);
+        width: calc(100vw - 5px);
+        overflow: auto;
+    }
 
-.mainContainer > div > hr {
-    margin: 10px auto;
-    width: 90%;
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(44, 172, 150, 0.75), rgba(255, 255, 255, 0));
-} */
+    .mainContainer > .contentHolder > h1 {
+        font-size: clamp(1.5rem, 10vw - 0.2rem, 2.5rem);
+    }
+    .mainContainer > .contentHolder > p {
+        line-height: 1.5rem;
+        font-size: clamp(1rem, 5vw - 0.5rem, 1.5rem);
+    }
+    .mainContainer > .contentHolder > p > a {
+        font-size: clamp(1rem, 5vw - 0.5rem, 1.5rem);
+    }
+}
