@@ -7,6 +7,7 @@ import { UrlService } from './services/url.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+
   title = 'portfolio';
   homeFlag:boolean = false;
 

@@ -1,27 +1,27 @@
 .contentContainer {
-    width: calc(100% - 200px);
-    height: calc(100vh - 144.4px);
-    background-color: rgb(235, 235, 235);
-    float: right;
+  width: calc(100% - 200px);
+  height: calc(100vh - 144.4px);
+  background-color: rgb(235, 235, 235);
+  float: right;
 }
 
 .fullHeight {
-    height: 100vh;
-    background: url(../assets/images/backgrounds/background8.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 100vh;
+  background: url(../assets/images/backgrounds/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media screen and (max-width: 800px) {
-    .contentContainer {
-        width: 100%;
-        height: calc(100vh - 245px);
-        overflow: auto;
-    }
+  .contentContainer {
+    width: 100%;
+    height: calc(100vh - 245px);
+    overflow: auto;
+  }
 
-    .fullHeight {
-        height: calc(100vh - 100.6px);
-    }
+  .fullHeight {
+    height: calc(100vh - 100.6px);
+  }
 }

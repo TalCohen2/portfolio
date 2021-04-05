@@ -29,7 +29,8 @@ nav>div.textHolder:focus {
   outline: 0;
 }
 
-nav>div.topContent>img,nav>div.blackLayer {
+nav>div.topContent>img,
+nav>div.blackLayer {
   display: none;
   background-color: transparent;
 }
@@ -37,15 +38,10 @@ nav>div.topContent>img,nav>div.blackLayer {
 nav>div.topContent>.textHolder>h1 {
   font-size: 2.5rem;
   margin: 0 auto;
-  color:  rgb(44, 172, 150);
+  color: rgb(44, 172, 150);
   width: 150px;
 
 }
-
-/* nav>ul { */
-  /* height: 100%; */
-  /* height: calc(100vh - 144px); */
-/* } */
 
 nav>ul>li {
   display: flex;
@@ -70,7 +66,8 @@ nav>ul>li>a {
 }
 
 nav>ul>li:hover {
-  background-color: rgb(44, 172, 150);;
+  background-color: rgb(44, 172, 150);
+  ;
 
 }
 
@@ -86,7 +83,7 @@ nav>ul>li.active>a {
   color: white;
 }
 
-nav > hr {
+nav>hr {
   border-bottom: 0;
 }
 
@@ -114,14 +111,14 @@ nav > hr {
     cursor: pointer;
   }
 
-  nav > div.topContent > .textHolder>h1 {
+  nav>div.topContent>.textHolder>h1 {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  nav > ul {
+  nav>ul {
     position: absolute;
     transition: left 1s;
     left: -200px;
@@ -134,11 +131,6 @@ nav > hr {
   }
 
   nav>ul.displayNav {
-    /* display: inline-block; */
-    /* background-color: white; */
-    /* width: 200px; */
-    /* box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px 0px; */
-    /* height: calc(100vh - 102px); */
     transition: left 0.3 ease-in;
     left: 0px;
   }
@@ -146,11 +138,9 @@ nav > hr {
   nav>div.blackLayer.displayNav {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
-    /* transition: background-color 2s; */
     position: absolute;
     height: calc(100vh - 102px);
     width: 100vw;
   }
 
 }
-
