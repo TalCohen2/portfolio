@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit {
         Database:'mongoDB'
       },
       description:`An online supermarket store that includes features such as creating a cart, ordering products, coordinating deliveries, and printing a receipt for casual users.
-      And an admin panel that includes adding, removing, and editing products for admin users.`,
+      And an admin panel that includes adding, removing, and editing products.`,
       links: {
         github: 'https://github.com/TalCohen2/shopping-online',
       }
