@@ -19,8 +19,7 @@ export class ExperienceComponent implements OnInit {
     role:"Logistics manager",
     company: 'HP',
     date: '2015-2017',
-    description:`As a logistics manager, I was responsible for every logistics part in the department for which I was responsible.
-      As part of the job I was responsible for ordering and delivering goods to the production line, managing stocks according to the plan of the production line, and managing casual workers.
+    description:`As part of the job, I was responsible for ordering and delivering goods, managing inventory according to the production line plan, and managing casual workers.
       During this period, I acquired many management skills.`
   }]
 
